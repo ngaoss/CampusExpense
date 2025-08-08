@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ConclusionActivity">
+
+    <TextView
+        android:id="@+id/tv_overview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:text="Overview of expenses"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_category_summaries"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_overview_title"
+        android:layout_above="@+id/linear_layout_buttons"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_add_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add budget"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btn_manage_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expense management"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/btn_view_reports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expense Reports" />
+    </LinearLayout>
+
+</RelativeLayout>
