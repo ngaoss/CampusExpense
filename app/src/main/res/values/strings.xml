@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">CampusExpense Manager</string>
+
+    <string name="main_activity_title">Manager</string>
+    <string name="add_expense_fab_description">Add Expense</string>
+    <string name="currency_unit">VND</string>
+    <string name="recurring_prefix">[Recurring]</string>
+    <string name="edit_recurring_warning">Cannot edit a recurring expense here.</string>
+
+    <string name="add_expense_title">Add Expense</string>
+    <string name="edit_expense_title">Edit Expense</string>
+    <string name="hint_amount">Amount</string>
+    <string name="hint_description">Description</string>
+    <string name="label_select_date">Select Date</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_delete">Delete</string>
+
+    <string name="toast_info_required">Please fill in all required fields.</string>
+    <string name="toast_expense_added">Expense added.</string>
+    <string name="toast_expense_updated">Expense updated.</string>
+    <string name="toast_expense_deleted">Expense deleted.</string>
+    <string name="toast_category_required">Please add a category first.</string>
+
+    <string name="category_food">Food</string>
+    <string name="category_transport">Transport</string>
+    <string name="category_bills">Bills</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="transactions_add_recurring_rule">Add Recurring Rule</string>
+    <string name="transactions_manage_rules">Manage Recurring Rules</string>
+
+    <string-array name="expense_categories">
+        <item>Food</item>
+        <item>Transport</item>
+        <item>Bills</item>
+        <item>Entertainment</item>
+    </string-array>
+</resources>
