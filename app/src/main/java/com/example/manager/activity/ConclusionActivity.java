@@ -42,7 +42,7 @@ public class ConclusionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_wallet);
+        setContentView(R.layout.fragment_budget);
         budgetRepository = new BudgetRepository(this);
         expenseRepository = new ExpenseRepository(this);
         recurringExpenseRepository = new RecurringExpenseRepository(this);

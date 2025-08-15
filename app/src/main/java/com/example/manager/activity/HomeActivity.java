@@ -12,9 +12,8 @@ import com.example.manager.R;
 import com.example.manager.data.AddEditExpenseActivity;
 import com.example.manager.data.AddRecurringExpenseActivity;
 import com.example.manager.fragments.AccountFragment;
-import com.example.manager.fragments.BudgetFragment;
 import com.example.manager.fragments.OverviewFragment;
-import com.example.manager.fragments.WalletFragment;
+import com.example.manager.fragments.BudgetFragment;
 import com.example.manager.fragments.TransactionsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -47,7 +46,7 @@ public class HomeActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             bottomNavigationView.setSelectedItemId(R.id.nav_overview);
-            loadFragment(new WalletFragment());
+            loadFragment(new BudgetFragment());
         }
 
         setupFabClickListeners();
@@ -89,7 +88,7 @@ public class HomeActivity extends AppCompatActivity {
                 } else if (itemId == R.id.nav_expense) {
                     selectedFragment = new TransactionsFragment();
                 } else if (itemId == R.id.nav_wallet) {
-                    selectedFragment = new WalletFragment();
+                    selectedFragment = new BudgetFragment();
                 } else if (itemId == R.id.nav_account) {
                     selectedFragment = new AccountFragment();
                 }
