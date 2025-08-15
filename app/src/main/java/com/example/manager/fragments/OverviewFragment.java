@@ -88,7 +88,7 @@ public class OverviewFragment extends Fragment {
         double currentBalance = totalBudget - totalSpentThisMonth;
 
         tvTotalSpent.setText(currencyFormatter.format(totalSpentThisMonth));
-        tvTotalIncome.setText(currencyFormatter.format(totalBudget)); // Displays "Total Budget"
+        tvTotalIncome.setText(currencyFormatter.format(totalBudget));
         tvTotalBalance.setText(currencyFormatter.format(currentBalance));
         tvCashAmount.setText(currencyFormatter.format(currentBalance));
     }
